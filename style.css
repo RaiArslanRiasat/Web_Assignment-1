@@ -1,0 +1,99 @@
+.flex{
+    display: flex;
+}
+
+.brand-image{
+    height: 50px;
+    /* margin-top: 2px; */
+    margin-bottom: 7px;
+    margin-left: 2px ;
+    margin: 4px;
+}
+.navbar{
+    background-color: rgb(2, 40, 51);
+}
+.dropdown1{
+    background-color: rgb(2, 40, 51);
+}
+
+.first-row-margin{
+    margin-left: auto;
+}
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.white-text{
+    color: white;
+}
+.shadow{
+   background-color: rgb(63, 62, 62);
+
+}
+.banner-card{
+    background-image: url("/browse-banner-4.png");
+    
+}
+.margin-top{
+    margin-top: 6%;
+}
+.banner-video-image{
+    background-image: url('./original.webp');
+    height: 100%; 
+    background-size: cover;
+}
+.mask{
+    background-color: rgba(48, 46, 46, 0.6);
+}
+.user-image-medium{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+
+}
+.mdi-36px {
+    font-size: 39px;
+    margin-right: 10px;
+}
+
+.footer-base{
+    border-top: goldenrod;
+    border: green;
+}
+
+.social-media{
+    margin-left: 86%;
+}
+
+
+.sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    position: absolute;
+    height: auto;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }  
