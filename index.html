@@ -24,15 +24,15 @@
 
 <body>
 
-  <div class="navbar mb-4">
+  <div class="site-navbar mb-4">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <!-- logo -->
       <a class="navbar-bran " href="#">
         <img class="brand-image" src="logo-header-2020.svg" alt="Logo"></a>
 
       <div class="dropdown ml-4">
-        <button class="btn dropdown1 btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn dropdown1 bg-transparent text-success font-weight-bold  dropdown-toggle" type="button"
+          id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Browse
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -73,24 +73,24 @@
 
       <div class="form-group has-search mb-0 ml-4">
         <span class="fa fa-search form-control-feedback"></span>
-        <input type="text" class="form-control" placeholder="Search">
+        <input type="text" class="form-control bg-transparent text-white"
+          placeholder="What do you want to learn today?">
       </div>
       <!-- Button -->
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <i class="fa-solid fa-bars"></i>
-        <span>Menu</span>
       </button>
 
       <div class="collapse navbar-collapse " id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item ml-4 mr-4 active">
-            <a class="nav-link" href="#home">Chroma courses <span class="sr-only">(current)</span></a>
+          <li class="nav-item active">
+            <a class="nav-link font-weight-bold" href="#home">Chroma courses <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item ml-4 mr-4 active">
+          <li class="nav-item font-weight-bold ml-2 active">
             <a class="nav-link" href="#home">Sign in</a>
           </li>
-          <button class="btn btn-success">
+          <button class="btn mr-4 btn-success">
             Sign Up
           </button>
         </ul>
@@ -98,49 +98,125 @@
     </nav>
   </div>
 
-  <!-- <div class="side-sticky-menu-wrapper">
-    <div class="side-sticky-menu">
-      <div class="content">
-        <div class="tag-link-wrapper bg-dark browse-offerings-nav reset-tag clear  selected">
-          <a href="" class="browse-offerings-link left">All Classes</a>
-        </div>
+  <div class="mobile-navbar mb-4">
+    <nav class="navbar navbar-dark fixed-top">
+
+      <button class="navbar-toggler mr-auto border-0" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive">
+        <i class="fa-solid fa-bars"></i>
+        <span class="btn bg-transparent fa fa-search " style="color: white;">
+        </span>
+      </button>
+
+
+      <a class="navbar-bran" href="#">
+        <img class="brand-image" src="logo-header-2020.svg" alt="Logo">
+      </a>
+
+      <button class="btn btn-success ml-auto">
+        Sign in
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link " href="#home">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Student Progress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Chroma Courses</a>
+          </li>
+
+        </ul>
       </div>
-    </div>
+    </nav>
+  </div>
 
-  </div> -->
 
-  <div class="container margin-top">
+  <div class="container ml-auto mr-auto margin-top mb-4">
     <div class="grid">
       <div class="row">
         <div class="col-md-3">
-          side bar
-          <div class="sidebar">
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-          </div>
+          <nav>
+            <ul>
+              <div class="sidebar">
+                <a class="active" style="text-decoration: none;" href="#home">All Classes</a>
+                <h5 class="font-weight-bold">create</h5>
+                <a href="#Animation">Animation</a>
+                <a href="#creative writing">Creative Writing</a>
+                <a href="#Film & Video">Film & video </a>
+                <a href="#Fine Arts">Fine Arts </a>
+                <a href="#Graphic Designning">Graphic Designning</a>
+                <a href="#Illustration">Illustration</a>
+                <a href="#Music">Music</a>
+                <a href="#Photography">Photography</a>
+                <a href="#UX/UIDesign">UX/UIDesign</a>
+                <a href="#Web Development">Web Development</a>
+                <h5 class="font-weight-bold">Build</b></h5>
+                <a href="#Bussiness Analytics">Bussiness Analytics</a>
+                <a href="#Freelance&Entreprenureship">Freelance&Entreprenureship</a>
+                <a href="#Leadership&Managment">Leadership&Managment </a>
+                <a href="#Marketting">Marketting</a>
+                <h5 class="font-weight-bold">Thrive</b></h5>
+                <a href="#LifeStyle">LifeStyle</a>
+                <a href="#Productivity">Productivity</a>
+              </div>
+            </ul>
+
+            <select class="container mt-4">
+              <div class="container-fluid mt-4">
+                <option value="" selected="selected">All Online Classes</option>
+
+                <option><a href="#Animation">Animation</a></option>
+                <option><a href="#creative writing">Creative Writing</a></option>
+                <option><a href="#Film & Video">Film & video </a></option>
+                <option><a href="#Fine Arts">Fine Arts </a></option>
+                <option><a href="#Graphic Designning">Graphic Designning</a></option>
+                <option><a href="#Illustration">Illustration</a></option>
+                <option><a href="#Music">Music</a></option>
+                <option><a href="#Photography">Photography</a></option>
+                <option><a href="#UX/UIDesign">UX/UIDesign</a>
+                <option><a href="#Web Development">Web Development</a></option>
+                <option><a href="#Bussiness Analytics">Bussiness Analytics</a></option>
+                <option><a href="#Freelance&Entreprenureship">Freelance&Entreprenureship</a></option>
+                <option><a href="#Leadership&Managment">Leadership&Managment </a></option>
+                <option><a href="#Marketting">Marketting</a></option>
+                <option><a href="#LifeStyle">LifeStyle</a></option>
+                <option><a href="#Productivity">Productivity</a></option>
+              </div>
+            </select>
+          </nav>
 
         </div>
 
         <div class="col-md-9">
           <div class="row mb-4 banner-card h-400">
-            <div class="card bg-transparent shadow border-0">
-              <div class="card-body">
-                <div class="card-title white-text">
-                  <h1 class="wont-weight-bold ">Online Classes</h1>
-                </div>
-                <div class="card-text white-text">
-                  <p>Find what fascinate you as you explore these online classes.</p>
-                </div>
-                <div class="mt-4 mb-4">
-                  <button class="btn bg-success">
-                    Get Started for free
-                  </button>
-                </div>
+            <div class="mask rgba-green-light col-12">
+              <!-- <div class="d-flex"> -->
+                <div class="card bg-transparent border-0">
+                  <div class="card-body">
+                    <div class="card-title white-text">
+                      <h1 class="font-weight-bold ">Online Classes</h1>
+                    </div>
+                    <div class="card-text white-text">
+                      <p>Find what fascinate you as you explore these online classes.</p>
+                    </div>
+                    <div class="mt-4 mb-4">
+                      <button class="btn bg-success rounded font-weight-bold">
+                        Get Started for Free
+                      </button>
+                    </div>
 
+                  </div>
+                <!-- </div> -->
               </div>
             </div>
+
           </div>
 
           <div class="row banner-video mt-4">
@@ -621,37 +697,37 @@
             </div>
           </div>
 
-          
+
           <div class="description mt-4">
             <div class="desription-header mb-4">
               <h3 class="font-weight-bold"> Explore Your Creativity</h3>
             </div>
 
             <div class="description-body mt-4">
-            <p>Take the next step on your creative journey. With these Skillshare classes, you can explore a range of
-              topics, tools, and techniques, from photography and graphic design, to drawing and animation. Whether
-              you’re looking for art classes for beginners or you’re an experienced professional, you can take your
-              skills to the next level with online classes in software like Photoshop, Procreate and After Effects, or
-              learning handmade techniques in painting, hand lettering, and illustration. Make a film, give your home a
-              makeover, start a freelance business. There’s so much inspiration to explore on Skillshare, and you’ll get
-              hands-on experience by completing and sharing your own projects.</p>
+              <p>Take the next step on your creative journey. With these Skillshare classes, you can explore a range of
+                topics, tools, and techniques, from photography and graphic design, to drawing and animation. Whether
+                you’re looking for art classes for beginners or you’re an experienced professional, you can take your
+                skills to the next level with online classes in software like Photoshop, Procreate and After Effects, or
+                learning handmade techniques in painting, hand lettering, and illustration. Make a film, give your home
+                a
+                makeover, start a freelance business. There’s so much inspiration to explore on Skillshare, and you’ll
+                get
+                hands-on experience by completing and sharing your own projects.</p>
+            </div>
           </div>
-        </div>
 
         </div>
       </div>
     </div>
-
-
-
   </div>
 
 
 
 
-  <footer class="footer mt-4 h-4=50 bg-dark">
+  <footer class="footer mt-4">
     <div class="container">
-      <div class="row white-text">
+      <!-- <div class="margin-top"></div> -->
+      <div class="row white-text ">
 
         <div class="col-md-3">
           <div class="company">
@@ -717,23 +793,26 @@
         </div>
       </div>
 
-      <div class="row base-footer clear margin-top ">
-        <div class="col-sm-6 footer-base border-100 white-text">
+      <div class="footer-line mt-4" style="border-top: 2px solid rgb(15, 230, 97);">
+      </div>
 
-          <span>© Skillshare,</span>
+      <div class="form-inline mt-3">
+        <div class="footerbase-tags">
+          <span class="white-text">© Skillshare,</span>
           <span class="ml-4 white-text">Inc. 2022</span>
           <a class="ml-4 white-text" href="">Help</a>
           <a class="ml-4 white-text" href="">Privacy</a>
           <a class="ml-4 white-text" href="">Terms</a>
-
         </div>
-        <div class="col-sm-6">
-          <a href=""><i class="fab fa-facebook-f social-media"></i></a>
+        <div class="footer-social-media ml-auto">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
           <!-- Twitter -->
           <a href=""><i class="fab fa-twitter"></i></a>
           <!-- Instagram -->
           <a href=""><i class="fab fa-instagram"></i></a>
         </div>
+      </div>
+      <div class="row base-footer clear mt-4 mb-4">
       </div>
     </div>
   </footer>

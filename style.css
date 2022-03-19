@@ -1,10 +1,19 @@
+body{
+    background: #f4f4f4;
+    font-family: "GT Walsheim Pro",Arial,sans-serif;
+}
+.font-weight-bold
+{
+    font-weight: 700;
+}
 .flex{
     display: flex;
 }
 
+
+
 .brand-image{
     height: 50px;
-    /* margin-top: 2px; */
     margin-bottom: 7px;
     margin-left: 2px ;
     margin: 4px;
@@ -23,7 +32,9 @@
 
 .has-search .form-control {
     padding-left: 2.375rem;
+    width: 150%;
 }
+
 .has-search .form-control-feedback {
     position: absolute;
     z-index: 2;
@@ -32,8 +43,7 @@
     height: 2.375rem;
     line-height: 2.375rem;
     text-align: center;
-    pointer-events: none;
-    color: #aaa;
+    color: rgb(255, 255, 255);
 }
 .white-text{
     color: white;
@@ -44,7 +54,7 @@
 }
 .banner-card{
     background-image: url("/browse-banner-4.png");
-    
+    background-position: center;
 }
 .margin-top{
     margin-top: 6%;
@@ -61,28 +71,26 @@
     border-radius: 50%;
     width: 48px;
     height: 48px;
-
 }
+
 .mdi-36px {
     font-size: 39px;
     margin-right: 10px;
 }
 
-.footer-base{
-    border-top: goldenrod;
-    border: green;
-}
-
-.social-media{
-    margin-left: 86%;
-}
+  .footer{
+    background-color: #002333;
+  }
 
 
-.sidebar {
+  sidebar {
+    margin: 0;
+    padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
-    position: absolute;
-    height: auto;
+   background-color: #f1f1f1; 
+    color: #002333;
+    position: fixed;
+    height: 100%;
     overflow: auto;
   }
   
@@ -90,10 +98,50 @@
   .sidebar a {
     display: block;
     color: black;
-    padding: 16px;
+    color: #002333;
+    padding: 8px;
     text-decoration: none;
   }
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #002333;
+    border-radius: 5px;
     color: white;
-  }  
+  }
+  h5 {
+    border-bottom: 1px solid black;
+    margin-left: 7%;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: rgba(85, 85, 85, 0.329); 
+    color: #002333;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 2000px;
+    color: #002333;
+  }
+  
+  nav select {
+    display: none;
+  }
+  @media (max-width:810px) {
+
+    nav ul     { display: none; }
+    nav select { display: inline-block; }
+  }
+  @media (min-width:989px) {
+      .mobile-navbar{display: none;}
+  }
+  @media  (max-width:990px) {
+      .site-navbar {display: none;}
+      .mobile-navbar {display: flex;}
+  }
