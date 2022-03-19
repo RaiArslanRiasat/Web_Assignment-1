@@ -10,8 +10,18 @@ body{
     display: flex;
 }
 
-
-
+.border-radius{
+    border-radius: 8px;
+}
+.border-top-radius{
+    border-radius: 8px;
+}
+.border-bottom-radius{
+    border-radius: 8px;
+}
+.card-body{
+    padding: 0.5rem;
+}
 .brand-image{
     height: 50px;
     margin-bottom: 7px;
@@ -54,7 +64,14 @@ body{
 }
 .banner-card{
     background-image: url("/browse-banner-4.png");
+    background-repeat: no-repeat;
     background-position: center;
+    border-radius: 8px;
+    min-height: 220px;
+}
+@media (min-width:800px) {
+    .banner-card{ min-height: 247px;}
+   
 }
 .margin-top{
     margin-top: 6%;
