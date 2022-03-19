@@ -19,9 +19,10 @@ body{
 .border-bottom-radius{
     border-radius: 8px;
 }
-.card-body{
+.card .card-body{
     padding: 0.5rem;
 }
+
 .brand-image{
     height: 50px;
     margin-bottom: 7px;
@@ -71,7 +72,15 @@ body{
 }
 @media (min-width:800px) {
     .banner-card{ min-height: 247px;}
-   
+}
+#rcorner1
+{
+    border-radius: 8px;
+}
+img
+{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .margin-top{
     margin-top: 6%;
